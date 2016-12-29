@@ -6,7 +6,7 @@ import java.io.IOException;
 //java TCPPing –p –port 9900 –mps 30 –size 1000 T440s
 class TCPPing {
     public static void main(String[] args) throws IOException {
-      /*  switch (args[0]) {
+            switch (args[0]) {
             case "-c":
                 StartCatcher(args);
                 break;
@@ -16,13 +16,7 @@ class TCPPing {
             default:
                 System.out.println("Invalid command arguments!");
                 break;
-        }*/
-
-        Catcher c = new Catcher();
-        c.startCatcher(9900, "192.168.1.2");
-
-        Pitcher p = new Pitcher(9900, 1000, 500, "DESKTOP-H0D8824");
-        p.startPitcher();
+        }
     }
 
     private static void StartCatcher(String[] args) {
